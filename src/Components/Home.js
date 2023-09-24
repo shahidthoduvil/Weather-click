@@ -9,7 +9,7 @@ const Home = () => {
   const [error, setError] = useState('');
   const [searched, setSearched] = useState(false); 
   const apikey = '6cb8ca6da5841b7f229cd64ed9856490'; 
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${apikey}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${apikey}`;
   const convertToCelsius = (fahrenheit) => (fahrenheit - 32) * 5/9;
   const weatherIcons = {
     'Clouds': <FaCloud />,
